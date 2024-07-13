@@ -6,7 +6,9 @@ import Questions from "./components/Questions";
 export default function Home() {
   return (
     <Provider store={store}>
+      <div className=" bg-gray-100">
       {<Questions/>}
+      </div>
       </Provider>
   );
 }

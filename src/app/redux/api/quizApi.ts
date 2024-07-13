@@ -5,7 +5,7 @@ export const quizApi = createApi({
     baseQuery: fetchBaseQuery({ baseUrl: 'https://the-trivia-api.com/v1' }),
     endpoints: (builder) => ({
         getQuestions: builder.query({
-            query: () => '/questions',
+            query: (difficulty) => '/questions?difficulty=' + difficulty,
         }),
     }),
 });
